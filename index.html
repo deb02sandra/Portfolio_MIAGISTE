@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amélé Sandrine AGBOMEDJI — Portfolio Licence 3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Portfolio Sandrine.css" />
+</head>
+<body>
+  <div class="bg-noise"></div>
+  <div class="cursor" id="cursor"></div>
+
+  <nav>
+    <a href="#hero" class="nav-logo">A.S.A</a>
+    <ul class="nav-links">
+      <li><a href="#about">Profil</a></li>
+      <li><a href="#parcours">Parcours</a></li>
+      <li><a href="#missions">Missions</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="cv.pdf" class="nav-cv" target="_blank">Télécharger CV</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème">☀️</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#about" onclick="closeMobile()">Profil</a>
+    <a href="#parcours" onclick="closeMobile()">Parcours</a>
+    <a href="#missions" onclick="closeMobile()">Missions</a>
+    <a href="#certifications" onclick="closeMobile()">Certifications</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+    <a href="cv.pdf" target="_blank">CV ↗</a>
+  </div>
+
+  <section id="hero">
+    <div class="hero-grid">
+      <div>
+        <p class="hero-eyebrow">Licence 3-MIAGE</p>
+        <h2>Amélé <em> Sandrine </em> AGBOMEDJI</h2>
+        <p class="hero-desc">
+          Étudiante en Licence 3 MIAGE à l'Université de Bordeaux, je suis passionnée par les réseaux et les télécommunications. Rigoureuse et curieuse, je m'intéresse également aux enjeux financiers des entreprises. Sportive assidue et lectrice à mes heures perdues, je cultive au quotidien cette philosophie : « Qu'as-tu que tu n'aies reçu ? » - une maxime qui guide mon approche du travail et du partage des connaissances.
+        <div class="hero-ctas">
+          <a href="#missions" class="btn-primary">Voir mes missions</a>
+          <a href="#contact" class="btn-outline">Me contacter</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-avatar-wrap">
+          <div class="hero-avatar-border"></div>
+          <div class="hero-avatar-bg">
+            <img src="images\ph_S.jpg" alt="Sandrine AGBOMEDJI"
+              style="width:100%;height:100%;object-fit:cover;object-position:center;position:absolute;inset: 0px;"
+              onerror="this.style.display='none'" />
+            <span class="initials-large"> </span>
+          </div>
+          <span class="hero-badge">Licence 3 ·MIAGE</span>
+        </div>
+        <div class="hero-deco"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <p class="section-tag">À propos</p>
+        <h2>Profil &amp; <em>Compétences</em></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>Je suis <strong style="color:var(--white)">MIAGISTE</strong>, evidemment que je suis polyvalente 🤹🏾‍♀️</p>
+          <p>Mes expériences en stage m'ont permis de développer des compétences solides en conception SI, POO, administration réseau, gestion de parc informatique, déploiement de serveurs. Je cherche à intégrer une structure où je pourrai mettre en pratique mes compétences et continuer à apprendre.</p>
+
+
+          <div style="margin-top:2rem;">
+            <p class="info-label" style="margin-bottom:.8rem;">Soft Skills</p>
+            <div style="display:flex;flex-wrap:wrap;gap:.5rem;">
+              <span class="skill-badge">Autonomie</span>
+              <span class="skill-badge">Sérieux</span>
+              <span class="skill-badge">Motivation</span>
+              <span class="skill-badge">Esprit d'initiative</span>
+              <span class="skill-badge">Travail en équipe</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-col reveal reveal-delay-2">
+          <p class="info-label" style="margin-bottom:1.4rem;">Compétences techniques</p>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Administration Réseau (Cisco)</span><span class="skill-pct">55%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Cisco Packet Tracer</span><span class="skill-pct">82%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Cybersécurité</span><span class="skill-pct">40%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Linux / Windows Server (AD, LDAP, GPO)</span><span class="skill-pct">55%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">GitHub / PuTTY</span><span class="skill-pct">60%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">GLPI / Gestion de parc</span><span class="skill-pct">60%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+          </div>          
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">VMware / VirtualBox / Docker</span><span class="skill-pct">65%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+          </div>
+          
+          <a href="cv.pdf" class="tl-link" target="_blank" style="margin-top:1.5rem;display:inline-flex;">Télécharger mon CV complet</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="parcours">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <p class="section-tag">Parcours</p>
+        <h2>Formation &amp; <em>Expériences</em></h2>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-section">
+          <p class="timeline-section-title">Cursus scolaire</p>
+          <div class="timeline-item">
+            <p class="tl-date">2025 — 2026</p>
+            <p class="tl-title">L3 MIAGE</p>
+            <p class="tl-org">Université de Bordeaux (33)</p>
+            <div class="tl-desc"><ul>
+              <li>Conception des systèmes d’information</li>
+              <li>Utilisation des réseaux</li>
+              <li>Stratégie des organisations</li>
+            </ul></div>
+          </div>
+
+          <div class="timeline-item">
+            <p class="tl-date">2023 — 2025</p>
+            <p class="tl-title">BTS SIO — Option SISR</p>
+            <p class="tl-org">Aurlom Education, Paris (75)</p>
+            <div class="tl-desc"><ul>
+              <li>Administration des systèmes et des réseaux</li>
+              <li>Cybersécurité des services informatiques</li>
+              <li>Mathématiques pour l'informatique</li>
+            </ul></div>
+          </div>
+          <div class="timeline-item">
+            <p class="tl-date">2022</p>
+            <p class="tl-title">Baccalauréat Général — Maths, Physique, SVT</p>
+            <p class="tl-org">Lycée de Tokoin 1, Lomé — Togo</p>
+          </div>
+        </div>
+        
+        <div class="timeline-section">
+          <p class="timeline-section-title">Expériences professionnelles</p>
+          <div class="timeline-item">
+            <p class="tl-date">2025 - en cours</p>
+            <p class="tl-title">Préparatrice de commande · job étudiant</p>
+            <p class="tl-org">CERP Rouen</p>
+            <div class="tl-desc"><ul>
+              <li>Utilisation d'un système de gestion des stocks pour localiser les produits demandés avant expédition.</li>
+              <li>Exécution des opérations de préparation de commandes et rangement.</li>
+            </ul></div>
+          </div>
+          <div class="timeline-item">
+            <p class="tl-date">2025 — 5 semaines</p>
+            <p class="tl-title">Technicienne support informatique · Stage</p>
+            <p class="tl-org">Ceffage, Paris</p>
+            <div class="tl-desc"><ul>
+              <li>Configuration de la téléphonie IP (3CX) et administration des comptes via Zoho CRM</li>
+              <li>Déploiement et maintenance du parc informatique (PC, imprimantes, réseau)</li>
+            </ul></div>
+          </div>
+          <div class="timeline-item">
+            <p class="tl-date">2024 — Bénévolat</p>
+            <p class="tl-title">Animatrice de site web</p>
+            <p class="tl-org">Association Regards Solidaires, Strasbourg</p>
+            <div class="tl-desc"><p>Publication de contenus web, gestion de la plateforme, animation communautaire.</p></div>
+          </div>
+          <div class="timeline-item">
+            <p class="tl-date">2024 — 5 semaines</p>
+            <p class="tl-title">Technicienne réseaux · Stage</p>
+            <p class="tl-org">IFIDE Sup-Formation, Strasbourg</p>
+            <div class="tl-desc"><ul>
+              <li>Gestion de parc informatique via GLPI</li>
+              <li>Audit de câblage : évaluation de la capacité et de la conformité des installations</li>
+            </ul></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="missions">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <p class="section-tag">Épreuves E5 &amp; E6</p>
+        <h2>Missions <em>Techniques</em></h2>
+      </div>
+      <p class="reveal" style="color:var(--text-dim);margin-bottom:2.5rem;max-width:600px;font-size:.95rem;">Ensemble des travaux pratiques réalisés dans le cadre de ma formation BTS SIO et L3 MIAGE couvrant les domaines réseau, système et sécurité.</p>
+
+      <div class="missions-grid missions-projects reveal">
+
+        <a href="fichiers/TDM2.pdf" class="mission-card" target="_blank">
+          <p class="mission-icon"><p class="mission-icon">🌐</p>
+          <p class="mission-title">Les équipements réseaux</p>
+          <p class="mission-tag">Réseau · Cisco</p>
+          <p class="mission-arrow">→ Voir le document</p>
+        </a>
+
+        <a href="fichiers/TDM3.pdf" class="mission-card" target="_blank">
+          <p class="mission-num"></p><p class="mission-icon">✍🏾</p>
+          <p class="mission-title">Manipulation des adresses IP</p>
+          <p class="mission-tag">Réseau · Routage</p>
+          <p class="mission-arrow">→ Voir le document</p>
+        </a>
+
+        <a href="fichiers/TDM4.pdf" class="mission-card" target="_blank">
+          <p class="mission-num"></p><p class="mission-icon"></p>
+          <p class="mission-title">Les sous réseaux</p>
+          <p class="mission-tag">Réseau · Routage Cisco</p>
+          <p class="mission-arrow">→ Voir le document</p>
+        </a>
+        
+        <a href="fichiers/TDM5-V.pdf" class="mission-card" target="_blank">
+          <p class="mission-num">E5 · 05</p><p class="mission-icon">🛣️</p>
+          <p class="mission-title">Simulation d'une liaison WAN entre 2 routeurs</p>
+          <p class="mission-tag">Réseau · Cisco</p>
+          <p class="mission-arrow">→ Voir le document</p>
+        </a>
+
+        <a href="fichiers/TDM_6_HTTP_DNS.pdf" class="mission-card" target="_blank">
+          <p class="mission-num"></p><p class="mission-icon">🖥️</p>
+          <p class="mission-title">Services HTTP/DNS</p>
+          <p class="mission-tag">Systèmes</p>
+          <p class="mission-arrow">→ Voir le document</p>
+        </a>
+
+        <a href="fichiers/TDM8(1).pdf" class="mission-card" target="_blank">
+          <p class="mission-num"></p><p class="mission-icon">🐧</p>
+          <p class="mission-title">Configuration de Vlans</p>
+          <p class="mission-tag">Réseau · Cisco</p>
+          <p class="mission-arrow">→ Voir le document</p>
+        </a>
+
+        <a href="fichiers/TDM9.pdf" class="mission-card" target="_blank">
+          <p class="mission-num"></p><p class="mission-icon">🐧</p>
+          <p class="mission-title">Configuration Access-list</Access-list></p>
+          <p class="mission-tag">Réseau · Cisco</p>
+          <p class="mission-arrow">→ Voir le document</p>
+        </a>
+      </div>
+
+      <div class="divider" style="margin-top:3rem;"></div> 
+      <div class="section-header reveal" style="margin-top:2.5rem;">
+        <p class="section-tag"></p>
+        <h2>Veille technologique <em></em></h2>
+      </div>
+      <div class="missions-grid veille-grid reveal">
+        <a href="https://deb02sandra.github.io/Portfolio-de-Sandrine/documents/Blue Modern Futuristic Technology Presentation (1).pdf" class="mission-card" target="_blank">
+          <p class="mission-num">Veille</p><p class="mission-icon">🔬</p>
+          <p class="mission-title">Veille technologique</p>
+          <p class="mission-tag">Technology LI-FI</p>
+          <p class="mission-arrow">→ Voir le document</p>
+        </a>
+
+        <a href="fichiers/Présentation-3.pdf" class="mission-card" target="_blank">
+          <p class="mission-num">Veille</p><p class="mission-icon">🛜</p>
+          <p class="mission-title">Veille technologique</p>
+          <p class="mission-tag">La 6G</p>
+          <p class="mission-arrow">→ Voir le document</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section id="contact">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <p class="section-tag">Contact</p>
+        <h2>Travaillons <em>ensemble</em></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-text reveal">
+          <p>Vous souhaitez me proposer un stage, une alternance ou simplement échanger sur un projet ? N'hésitez pas à me contacter, je vous répondrai dans les meilleurs délais.</p>
+          <div class="contact-item">
+            <div class="contact-icon">✉</div>
+            <div>
+              <p class="contact-detail-label">E-mail</p>
+              <p class="contact-detail-value">lagbomedji04@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <p class="contact-detail-label">Téléphone</p>
+              <p class="contact-detail-value">06 22 17 54 32</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <p class="contact-detail-label">Localisation</p>
+              <p class="contact-detail-value">77200 Torcy, France</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📄</div>
+            <div>
+              <p class="contact-detail-label">CV</p>
+              <a href="cv.pdf" target="_blank" class="tl-link" style="margin-top:0;">Télécharger mon CV</a>
+            </div>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label class="form-label" for="nom">Nom complet</label>
+              <input type="text" id="nom" class="form-input" placeholder="Votre nom" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">E-mail</label>
+              <input type="email" id="email" class="form-input" placeholder="votre@email.com" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="msg">Message</label>
+              <textarea id="msg" class="form-textarea" placeholder="Votre message…" required></textarea>
+            </div>
+            <button type="submit" class="btn-send">Envoyer →</button>
+            <p id="form-success" style="display:none;color:var(--accent);font-family:'Space Mono',monospace;font-size:.7rem;letter-spacing:.1em;margin-top:.5rem;">✓ Message envoyé avec succès</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-copy">© 2025 Amélé Sandrine AGBOMEDJI · Tous droits réservés</p>
+    <p class="footer-logo">A.S.A</p>
+  </footer>
+
+  <script src="Portfolio Sandrine.js"></script>
+</body>
+</html>
