@@ -34,10 +34,22 @@ const skillObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 fills.forEach(f => skillObserver.observe(f));
 
-function handleSubmit(e) {
+async function handleSubmit(e) {
   e.preventDefault();
-  document.getElementById('form-success').style.display = 'block';
-  e.target.reset();
+  const status = document.getElementById('form-success');
+  if (!status) return;
+  status.style.display = 'block';
+  status.style.color = 'var(--accent)';
+
+  status.textContent = 'Envoi en cours...';
+
+  // Simule un délai utilisateur pour le statut
+  await new Promise(resolve => setTimeout(resolve, 600));
+
+  // En choix volontaire : pas d'envoi automatique en backend pour le moment.
+  // On affiche un message clair à l'utilisateur.
+  status.textContent = 'Échec d\'envoi, veuillez envoyer un mail au lagbomedji04@gmail.com';
+  status.style.color = '#e55';
 }
 
 const sections = document.querySelectorAll('section[id]');
@@ -54,8 +66,14 @@ window.addEventListener('scroll', () => {
   });
 });
 
-const themeToggle = document.getElementById('themeToggle');
-themeToggle.addEventListener('click', () => {
+function toggleTheme() {
   document.body.classList.toggle('light-theme');
-  themeToggle.textContent = document.body.classList.contains('light-theme') ? '🌙' : '☀️';
-});
+  const isLight = document.body.classList.contains('light-theme');
+  const themeIcons = document.querySelectorAll('.theme-toggle');
+  themeIcons.forEach(btn => btn.textContent = isLight ? '🌙' : '☀️');
+}
+
+const themeToggle = document.getElementById('themeToggle');
+const themeToggleMobile = document.getElementById('themeToggleMobile');
+if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
+if (themeToggleMobile) themeToggleMobile.addEventListener('click', toggleTheme);

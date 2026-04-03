@@ -204,6 +204,8 @@ h1 em { font-style: italic; color: var(--accent2); }
 .hero-avatar-wrap {
   width: 360px; height: 360px;
   position: relative;
+  border-radius: 50%;
+  overflow: hidden;
 }
 .hero-avatar-bg {
   position: absolute; inset: 0;
@@ -242,6 +244,7 @@ h1 em { font-style: italic; color: var(--accent2); }
   transform: translate(-50%,-50%);
   animation: spin 30s linear infinite;
   pointer-events: none;
+  display: none;
 }
 @keyframes spin { to { transform: translate(-50%,-50%) rotate(360deg); } }
 
