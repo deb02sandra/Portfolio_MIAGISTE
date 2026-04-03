@@ -206,6 +206,8 @@ h1 em { font-style: italic; color: var(--accent2); }
   position: relative;
   border-radius: 50%;
   overflow: hidden;
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 20px rgba(184, 150, 90, 0.3);
 }
 .hero-avatar-bg {
   position: absolute; inset: 0;
